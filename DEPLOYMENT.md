@@ -1,59 +1,29 @@
-# CYNX LTD - Deployment Guide
+# Deployment
 
-## Project Structure
-
-This is a React + TypeScript + Tailwind CSS application built with Vite.
-
-### Key Files
-
-- `src/app/App.tsx` - Main application component (complete website)
-- `src/app/components/` - All service and UI components
-- `src/styles/` - Global styles and Tailwind configuration
-
-### Components Overview
-
-The application includes:
-- **CursorSpotlight.tsx** - Custom cursor with spotlight effect
-- **ConsultationModal.tsx** - Contact form modal
-- **AboutUs.tsx** - Company information and team
-- **TechStackTabs.tsx** - Technology showcase
-- **Service Components** - 15+ individual service detail components
-
-### Installation
+## Local Production Check
 
 ```bash
 pnpm install
-```
-
-### Development
-
-```bash
-pnpm dev
-```
-
-### Build
-
-```bash
 pnpm build
+pnpm start
 ```
 
-## Notes
+The Express server serves `dist/index.html` and static assets when
+`NODE_ENV=production`.
 
-Due to the large size of the complete application file (App.tsx is 2500+ lines), the full source code is available in the repository. The application is fully functional and production-ready.
+## Environment
 
-### Features
+- `PORT` changes the server port. Default: `3000`.
+- The contact form posts to `POST /api/contact`.
 
-✅ Purple-to-pink gradient design  
-✅ Interactive case study modals  
-✅ Custom cursor spotlight effect  
-✅ Responsive mobile design  
-✅ Partner logos carousel (BT, British Gas, GAME, Michelin)  
-✅ Comprehensive service sections  
-✅ About Us page with co-founders  
-✅ Tech stack display  
-✅ Consultation modal
+## Deploying
 
-## Co-Founders
+This project is a standard Vite build with a small Node.js server:
 
-- David Smith
-- Drilon Bardhi
+- Build command: `pnpm build`
+- Production command: `pnpm start`
+- Output directory: `dist`
+
+If deploying as a static-only site, the UI still builds to `dist`, but the
+contact form endpoint must be replaced with the hosting provider's serverless
+function or form handler.

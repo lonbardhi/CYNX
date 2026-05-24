@@ -327,6 +327,10 @@ img {
   color: #fff;
 }
 
+.services-menu-rail button.is-current .service-icon-image {
+  background: #fff;
+}
+
 .services-menu-rail strong,
 .services-menu-cards strong {
   color: var(--ink);
@@ -1343,6 +1347,19 @@ p {
   height: 46px;
   justify-content: center;
   width: 46px;
+}
+
+.service-icon-image {
+  background: #fff;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.service-icon-image img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .process-layout {

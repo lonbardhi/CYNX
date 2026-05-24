@@ -52,6 +52,7 @@ import {
   techStacks,
   type CaseStudy,
   type Service,
+  type ServiceGroup,
   type ServiceSlug
 } from "./cynx-data";
 
@@ -231,6 +232,18 @@ function ServiceIcon({ service }: { service: Service }) {
       <Icon size={22} strokeWidth={2.2} />
     </span>
   );
+}
+
+function ServiceGroupIcon({ group }: { group: ServiceGroup }) {
+  if (group.name === "AI & Data Strategy") {
+    return (
+      <span className="service-icon service-icon-image" aria-hidden="true">
+        <img alt="" src="/icons/ai-data-strategy.svg" />
+      </span>
+    );
+  }
+
+  return <ServiceIcon service={serviceBySlug(group.slugs[0]) ?? services[0]} />;
 }
 
 function TechLogoCard({ name, liftOnHover = true }: { name: string; liftOnHover?: boolean }) {
@@ -447,7 +460,7 @@ function Header({
                 onFocus={() => setActiveServiceGroup(group.name)}
                 onClick={() => setActiveServiceGroup(group.name)}
               >
-                <ServiceIcon service={serviceBySlug(group.slugs[0]) ?? services[0]} />
+                <ServiceGroupIcon group={group} />
                 <span>
                   <strong>{group.name}</strong>
                   <small>{group.description}</small>

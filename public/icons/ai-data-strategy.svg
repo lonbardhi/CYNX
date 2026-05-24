@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI">
+  <defs>
+    <linearGradient id="aiOuter" x1="86" y1="88" x2="418" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84e7f7"/>
+      <stop offset="0.42" stop-color="#10b6ea"/>
+      <stop offset="0.68" stop-color="#ff8d35"/>
+      <stop offset="1" stop-color="#fff354"/>
+    </linearGradient>
+    <linearGradient id="aiPanel" x1="137" y1="141" x2="376" y2="374" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a97bf1"/>
+      <stop offset="1" stop-color="#6423c6"/>
+    </linearGradient>
+    <linearGradient id="aiShineBlue" x1="70" y1="80" x2="230" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#93ecfb"/>
+      <stop offset="1" stop-color="#00a7e8"/>
+    </linearGradient>
+    <linearGradient id="aiShineGold" x1="286" y1="73" x2="438" y2="222" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff957"/>
+      <stop offset="1" stop-color="#ff982c"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#aiOuter)">
+    <circle cx="145" cy="194" r="82"/>
+    <circle cx="213" cy="113" r="76"/>
+    <circle cx="306" cy="111" r="78"/>
+    <circle cx="385" cy="181" r="84"/>
+    <circle cx="423" cy="281" r="76"/>
+    <circle cx="364" cy="382" r="86"/>
+    <circle cx="261" cy="420" r="80"/>
+    <circle cx="159" cy="379" r="83"/>
+    <circle cx="91" cy="292" r="79"/>
+    <circle cx="96" cy="205" r="76"/>
+    <circle cx="256" cy="256" r="177"/>
+  </g>
+  <path
+    d="M177 83c22 6 39 23 47 45 5 14-1 29-14 34-13 5-26-2-31-15-4-10-11-17-21-20-14-4-22-18-18-31 4-12 17-18 37-13Z"
+    fill="url(#aiShineBlue)"
+    opacity=".92"
+  />
+  <path
+    d="M337 83c-22 6-39 23-47 45-5 14 1 29 14 34 13 5 26-2 31-15 4-10 11-17 21-20 14-4 22-18 18-31-4-12-17-18-37-13Z"
+    fill="url(#aiShineGold)"
+    opacity=".92"
+  />
+  <rect x="136" y="134" width="242" height="242" rx="78" fill="url(#aiPanel)" transform="rotate(-6 257 255)"/>
+  <g fill="#fff">
+    <path d="M181 315c-12 0-20-10-16-22l42-124c4-12 12-18 25-18s21 6 25 18l42 124c4 12-4 22-16 22-9 0-16-5-19-14l-5-15h-55l-5 15c-3 9-9 14-18 14Zm34-62h33l-16-51h-1l-16 51Z"/>
+    <rect x="309" y="151" width="31" height="164" rx="15"/>
+  </g>
+</svg>

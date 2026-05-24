@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI development and implementation">
+  <defs>
+    <linearGradient id="cardGreen" x1="222" y1="74" x2="498" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#51c95a"/>
+      <stop offset="1" stop-color="#43b94a"/>
+    </linearGradient>
+    <linearGradient id="cardRed" x1="111" y1="198" x2="360" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f36b74"/>
+      <stop offset="1" stop-color="#e74d58"/>
+    </linearGradient>
+    <linearGradient id="cardGold" x1="26" y1="318" x2="230" y2="468" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc43b"/>
+      <stop offset="1" stop-color="#ffb32e"/>
+    </linearGradient>
+    <linearGradient id="arrowA" x1="14" y1="50" x2="133" y2="159" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b9c9d7"/>
+      <stop offset="1" stop-color="#8ea0b2"/>
+    </linearGradient>
+    <linearGradient id="arrowB" x1="370" y1="389" x2="493" y2="492" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b9c9d7"/>
+      <stop offset="1" stop-color="#8ea0b2"/>
+    </linearGradient>
+  </defs>
+  <path d="M199 64h281c9 0 16 7 16 16v176c0 9-7 16-16 16H199c-4 0-7-3-7-7V71c0-4 3-7 7-7Z" fill="url(#cardGreen)"/>
+  <path d="M392 88h17v16h-17V88Zm32 0h17v16h-17V88Zm32 0h17v16h-17V88Z" fill="#dff0df"/>
+  <path d="M118 192h234c9 0 16 7 16 16v152c0 9-7 16-16 16H118c-8 0-14-6-14-14V206c0-8 6-14 14-14Z" fill="url(#cardRed)"/>
+  <path d="M296 216h17v16h-17v-16Zm32 0h17v16h-17v-16Z" fill="#ffdfe2"/>
+  <path d="M32 304h200c9 0 16 7 16 16v136c0 9-7 16-16 16H32c-9 0-16-7-16-16V320c0-9 7-16 16-16Z" fill="url(#cardGold)"/>
+  <path d="M75 424c-9 0-15-8-12-17l26-78c3-9 9-13 19-13s16 4 19 13l26 78c3 9-3 17-12 17-7 0-12-4-14-10l-3-10H91l-3 10c-2 6-6 10-13 10Zm23-42h20l-10-33h-1l-9 33Z" fill="#775d19"/>
+  <path d="M151 424v-25h18v-47h-18v-25h65v25h-18v47h18v25h-65Z" fill="#775d19"/>
+  <path d="M34 162 91 105 70 84l63-13-12 64-21-21-57 57-9-9Z" fill="url(#arrowA)"/>
+  <path d="M20 130 77 73l-7-7 63-13-12 64-7-7-57 57-37-37Z" fill="#9eb0c2"/>
+  <path d="M382 492 439 435l-21-21 67-35-35 67-21-21-57 57 10 10Z" fill="url(#arrowB)"/>
+  <path d="M373 453 430 396l-8-8 63-9-9 63-8-8-57 57-38-38Z" fill="#9eb0c2"/>
+</svg>

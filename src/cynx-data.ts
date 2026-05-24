@@ -569,6 +569,46 @@ export const caseStudies: CaseStudy[] = [
     technologies: ["React Native", "TypeScript", "Node.js", "AWS", "Plaid API"],
     quote:
       "The CYNX team combined product thinking with deep engineering discipline from start to launch."
+  },
+  {
+    title: "Healthcare Data Intelligence Hub",
+    client: "Regional Care Network",
+    sector: "Healthcare",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400",
+    challenge:
+      "Clinical and operations teams were making decisions from delayed reports spread across disconnected systems.",
+    solution:
+      "CYNX designed a secure data hub with governed pipelines, dashboards, and AI-assisted insight workflows.",
+    results: [
+      { value: "38%", label: "Faster reporting" },
+      { value: "12", label: "Sources unified" },
+      { value: "99.9%", label: "Pipeline uptime" },
+      { value: "6w", label: "Pilot delivery" }
+    ],
+    technologies: ["PostgreSQL", "Python", "dbt", "Power BI", "Azure AI"],
+    quote:
+      "CYNX gave our teams a trusted data foundation without slowing down frontline operations."
+  },
+  {
+    title: "Security Architecture Modernization",
+    client: "ScaleUp Commerce Group",
+    sector: "Cyber Security",
+    image:
+      "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=1400",
+    challenge:
+      "Rapid product growth had outpaced identity, access, cloud controls, and release governance.",
+    solution:
+      "CYNX mapped the risk model, redesigned security architecture, and delivered a prioritized hardening roadmap.",
+    results: [
+      { value: "54", label: "Controls mapped" },
+      { value: "72%", label: "Critical risk reduction" },
+      { value: "SOC 2", label: "Readiness path" },
+      { value: "10w", label: "Roadmap window" }
+    ],
+    technologies: ["OWASP", "Snyk", "Cloud security", "IAM", "Terraform"],
+    quote:
+      "The work turned security from a blocker into a clear operating model for product growth."
   }
 ];
 

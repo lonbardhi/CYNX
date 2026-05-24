@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Solution design and discovery">
+  <defs>
+    <linearGradient id="bowlBlue" x1="174" y1="212" x2="309" y2="346" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#63d7ef"/>
+      <stop offset="1" stop-color="#08a9c9"/>
+    </linearGradient>
+    <linearGradient id="puzzleRed" x1="232" y1="34" x2="386" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7478"/>
+      <stop offset="1" stop-color="#ef3f3f"/>
+    </linearGradient>
+    <linearGradient id="gearGold" x1="295" y1="295" x2="484" y2="474" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe900"/>
+      <stop offset="1" stop-color="#ffb000"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 208a136 136 0 0 1 136-136v136H40Z" fill="#ffd200"/>
+  <path d="M176 72c-54 0-99 31-121 76a137 137 0 0 0 121 60V72Z" fill="#ffe04a" opacity=".55"/>
+  <path d="M40 208h136v136H40V208Z" fill="#f7514f"/>
+  <path d="M176 208h136a136 136 0 0 1-136 136V208Z" fill="url(#bowlBlue)"/>
+  <path d="M176 344a136 136 0 0 1-136-136h136v136Z" fill="#ff696c"/>
+  <path d="M116 208c0-17 12-31 28-34 14-3 27 8 27 23 0 8 6 14 14 14h127c0 75-61 136-136 136-43 0-82-20-107-51 15 11 35 20 58 21 30 1 48-12 63-27 10-10 26-10 36 0 11 11 29 5 32-10 4-19-10-37-29-37-8 0-16 3-21 9-9 9-21 14-35 14-33 0-57-25-57-58Z" fill="#32c8df" opacity=".22"/>
+  <circle cx="151" cy="144" r="23" fill="#020202"/>
+  <path d="M88 208c0 18 14 33 32 33 12 0 21-10 14-22-6-10-9-22-9-34 0-10-9-18-19-15-12 4-18 19-18 38Z" fill="#ffdb16"/>
+  <path d="M176 344h-72c-18 0-32 14-32 32s14 32 32 32h72v-64Z" fill="#dce6e8"/>
+  <path d="M176 344h96c18 0 32 14 32 32s-14 32-32 32h-96v-64Z" fill="#cbd6d9"/>
+  <path d="M176 384H88c-10 0-16 8-16 16s6 16 16 16h188c10 0 18-8 18-16s-8-16-18-16H176Z" fill="#d9e4e6"/>
+  <path d="M96 408h160v35a80 80 0 0 1-160 0v-35Z" fill="#9fa8a9"/>
+  <path d="M133 478a80 80 0 0 1 74-54h49v19a80 80 0 0 1-123 35Z" fill="#d3dddf"/>
+  <path d="M104 344h168c9 0 16 7 16 16s-7 16-16 16H104c-9 0-16-7-16-16s7-16 16-16Z" fill="#edf6f6"/>
+  <path d="M108 360h160c8 0 15-5 18-12 2 3 2 8 2 12 0 9-7 16-16 16H104c-9 0-16-7-16-16 0-4 1-8 4-11 3 7 9 11 16 11Z" fill="#cad6d8"/>
+  <path d="M275 24 240 140l51 15c8 2 16-3 18-11 4-16 20-26 36-22s26 20 22 36c-2 8 3 16 11 18l50 14 8-29c16-61-19-123-80-139l-81-22Z" fill="url(#puzzleRed)"/>
+  <path d="M275 24c15 71 53 119 152 137 8-58-27-114-85-130l-67-7Z" fill="#ff8588" opacity=".7"/>
+  <circle cx="232" cy="86" r="23" fill="#f94e50"/>
+  <circle cx="240" cy="185" r="25" fill="#4ed0e4"/>
+  <path d="M392 216h32v26a77 77 0 0 1 21 9l18-18 23 23-18 18c4 7 7 14 9 22h26v32h-26a77 77 0 0 1-9 21l18 18-23 23-18-18c-7 4-14 7-21 9v26h-32v-26a77 77 0 0 1-21-9l-18 18-23-23 18-18c-4-7-7-14-9-21h-26v-32h26c2-8 5-15 9-22l-18-18 23-23 18 18c7-4 14-7 21-9v-26Z" fill="#ffdc00"/>
+  <circle cx="408" cy="312" r="49" fill="#ffba00"/>
+  <circle cx="408" cy="312" r="28" fill="#ffea17"/>
+  <circle cx="408" cy="312" r="17" fill="#1b111f"/>
+  <path d="M320 322h48v38a114 114 0 0 1 32 13l26-27 34 34-27 26c6 10 10 21 13 33h38v48h-38a114 114 0 0 1-13 32l27 26-34 34-26-27a114 114 0 0 1-32 13v38h-48v-38a114 114 0 0 1-32-13l-26 27-34-34 27-26a114 114 0 0 1-13-32h-38v-48h38c3-12 7-23 13-33l-27-26 34-34 26 27c10-6 21-10 32-13v-38Z" fill="url(#gearGold)"/>
+  <circle cx="344" cy="464" r="72" fill="#ffb000"/>
+  <circle cx="344" cy="464" r="48" fill="#ffd91a"/>
+  <circle cx="344" cy="464" r="36" fill="#080808"/>
+</svg>

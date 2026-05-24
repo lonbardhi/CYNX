@@ -234,11 +234,18 @@ function ServiceIcon({ service }: { service: Service }) {
   );
 }
 
+const serviceGroupIconSrc: Partial<Record<ServiceGroup["name"], string>> = {
+  "AI & Data Strategy": "/icons/ai-data-strategy.svg",
+  "Solution Design & Discovery": "/icons/solution-design-discovery.svg"
+};
+
 function ServiceGroupIcon({ group }: { group: ServiceGroup }) {
-  if (group.name === "AI & Data Strategy") {
+  const iconSrc = serviceGroupIconSrc[group.name];
+
+  if (iconSrc) {
     return (
       <span className="service-icon service-icon-image" aria-hidden="true">
-        <img alt="" src="/icons/ai-data-strategy.svg" />
+        <img alt="" src={iconSrc} />
       </span>
     );
   }

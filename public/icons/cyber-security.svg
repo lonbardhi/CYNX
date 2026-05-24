@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cyber security">
+  <defs>
+    <linearGradient id="shieldBack" x1="120" y1="98" x2="396" y2="402" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b9dcfb"/>
+      <stop offset="1" stop-color="#94c7f2"/>
+    </linearGradient>
+    <linearGradient id="shieldCore" x1="168" y1="137" x2="348" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a5ff9d"/>
+      <stop offset="1" stop-color="#75de7e"/>
+    </linearGradient>
+    <linearGradient id="nodeBlue" x1="12" y1="12" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84cfff"/>
+      <stop offset="1" stop-color="#4db2f5"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#99a4af" stroke-linecap="round" stroke-linejoin="round" stroke-width="17">
+    <path d="M32 115v58c0 9 7 17 17 17h119"/>
+    <path d="M32 32h123c9 0 17 8 17 17v138"/>
+    <path d="M480 115v58c0 9-7 17-17 17H344"/>
+    <path d="M480 32H357c-9 0-17 8-17 17v138"/>
+    <path d="M32 397v-58c0-9 7-17 17-17h119"/>
+    <path d="M131 480l41-41V324"/>
+    <path d="M480 397v-58c0-9-7-17-17-17H344"/>
+    <path d="M381 480l-41-41V324"/>
+    <path d="M256 32v104"/>
+    <path d="M256 376v104"/>
+    <path d="M64 256h118"/>
+    <path d="M330 256h118"/>
+    <path d="M64 288h118"/>
+    <path d="M330 288h118"/>
+    <path d="M64 224h118"/>
+    <path d="M330 224h118"/>
+  </g>
+  <g>
+    <circle cx="32" cy="32" r="21" fill="url(#nodeBlue)"/>
+    <path d="M21 14a21 21 0 0 1 0 36 21 21 0 1 0 0-36Z" fill="#72c4fb" opacity=".55"/>
+    <circle cx="256" cy="32" r="18" fill="url(#nodeBlue)"/>
+    <circle cx="480" cy="32" r="21" fill="url(#nodeBlue)"/>
+    <path d="M469 14a21 21 0 0 1 0 36 21 21 0 1 0 0-36Z" fill="#72c4fb" opacity=".55"/>
+    <circle cx="32" cy="115" r="18" fill="url(#nodeBlue)"/>
+    <circle cx="480" cy="115" r="18" fill="url(#nodeBlue)"/>
+    <circle cx="32" cy="256" r="19" fill="url(#nodeBlue)"/>
+    <circle cx="480" cy="256" r="19" fill="url(#nodeBlue)"/>
+    <circle cx="32" cy="397" r="19" fill="url(#nodeBlue)"/>
+    <circle cx="480" cy="397" r="19" fill="url(#nodeBlue)"/>
+    <circle cx="131" cy="480" r="19" fill="url(#nodeBlue)"/>
+    <circle cx="256" cy="480" r="18" fill="url(#nodeBlue)"/>
+    <circle cx="381" cy="480" r="19" fill="url(#nodeBlue)"/>
+  </g>
+  <path
+    d="M122 123c38-16 83-24 134-24s96 8 134 24c16 44 24 89 24 135s-8 90-24 132c-40 16-85 24-134 24s-94-8-134-24c-16-42-24-86-24-132s8-91 24-135Z"
+    fill="url(#shieldBack)"
+  />
+  <path
+    d="M256 128 363 177v91c0 69-43 103-107 139-64-36-107-70-107-139v-91l107-49Z"
+    fill="url(#shieldCore)"
+  />
+  <path d="M256 151 336 188v79c0 51-30 78-80 107-50-29-80-56-80-107v-79l80-37Z" fill="#fff"/>
+  <path
+    d="m217 250 23 36 55-59"
+    fill="none"
+    stroke="#79c1fb"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="24"
+  />
+  <path d="M256 99c52 0 97 8 134 24 16 44 24 89 24 135 0 45-8 89-24 132-34 13-73 21-116 23 33-42 50-95 50-159 0-61-18-111-54-151-5-2-10-3-14-4Z" fill="#83bff1" opacity=".28"/>
+</svg>

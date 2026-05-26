@@ -161,18 +161,19 @@ function Header({
   return (
     <header className="site-header">
       <div className="header-inner">
-        <button className="brand-button" type="button" onClick={() => navigate("home")}>
+        <button className="brand-button" data-testid="brand-home-button" type="button" onClick={() => navigate("home")}>
           <Logo />
         </button>
 
         <nav className="desktop-nav" aria-label="Main navigation">
-          <button type="button" onClick={() => navigate("about")}>
+          <button data-testid="nav-about-button" type="button" onClick={() => navigate("about")}>
             About
           </button>
           <div className="nav-dropdown">
             <button
               aria-expanded={servicesOpen}
               className={servicesOpen ? "is-active" : ""}
+              data-testid="nav-services-button"
               type="button"
               onClick={() => setServicesOpen((open) => !open)}
             >
@@ -197,22 +198,23 @@ function Header({
               </div>
             ) : null}
           </div>
-          <button type="button" onClick={() => section("work")}>
+          <button data-testid="nav-work-button" type="button" onClick={() => section("work")}>
             Work
           </button>
-          <button type="button" onClick={() => section("technology")}>
+          <button data-testid="nav-technology-button" type="button" onClick={() => section("technology")}>
             Technology
           </button>
         </nav>
 
         <div className="header-actions">
-          <button className="ghost-button small" type="button" onClick={onContact}>
+          <button className="ghost-button small" data-testid="contact-open-button" type="button" onClick={onContact}>
             <Mail size={17} /> Contact
           </button>
           <button
             aria-expanded={mobileOpen}
             aria-label="Toggle navigation menu"
             className="icon-button mobile-toggle"
+            data-testid="mobile-menu-toggle"
             type="button"
             onClick={() => setMobileOpen((open) => !open)}
           >
@@ -222,17 +224,17 @@ function Header({
       </div>
 
       {mobileOpen ? (
-        <div className="mobile-panel">
-          <button type="button" onClick={() => navigate("about")}>
+        <div className="mobile-panel" data-testid="mobile-nav-panel">
+          <button data-testid="mobile-nav-about-button" type="button" onClick={() => navigate("about")}>
             About
           </button>
-          <button type="button" onClick={() => section("work")}>
+          <button data-testid="mobile-nav-work-button" type="button" onClick={() => section("work")}>
             Work
           </button>
-          <button type="button" onClick={() => section("technology")}>
+          <button data-testid="mobile-nav-technology-button" type="button" onClick={() => section("technology")}>
             Technology
           </button>
-          <button type="button" onClick={onContact}>
+          <button data-testid="mobile-contact-open-button" type="button" onClick={onContact}>
             Contact
           </button>
           <div className="mobile-services">
@@ -752,9 +754,15 @@ function ContactModal({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <div aria-modal="true" className="modal-backdrop" role="dialog" onClick={onClose}>
-      <div className="contact-modal" onClick={(event) => event.stopPropagation()}>
-        <button aria-label="Close contact form" className="icon-button modal-close" type="button" onClick={onClose}>
+    <div aria-modal="true" className="modal-backdrop" data-testid="contact-modal-backdrop" role="dialog" onClick={onClose}>
+      <div className="contact-modal" data-testid="contact-modal" onClick={(event) => event.stopPropagation()}>
+        <button
+          aria-label="Close contact form"
+          className="icon-button modal-close"
+          data-testid="contact-modal-close-button"
+          type="button"
+          onClick={onClose}
+        >
           <X size={22} />
         </button>
         <div className="contact-intro">
@@ -774,6 +782,8 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           <label>
             First name
             <input
+              data-testid="contact-first-name-input"
+              maxLength={200}
               required
               value={form.firstName}
               onChange={(event) => setForm({ ...form, firstName: event.target.value })}
@@ -782,6 +792,8 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           <label>
             Last name
             <input
+              data-testid="contact-last-name-input"
+              maxLength={200}
               required
               value={form.lastName}
               onChange={(event) => setForm({ ...form, lastName: event.target.value })}
@@ -790,6 +802,8 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           <label>
             Company
             <input
+              data-testid="contact-company-input"
+              maxLength={200}
               required
               value={form.company}
               onChange={(event) => setForm({ ...form, company: event.target.value })}
@@ -797,11 +811,19 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           </label>
           <label>
             Role
-            <input required value={form.role} onChange={(event) => setForm({ ...form, role: event.target.value })} />
+            <input
+              data-testid="contact-role-input"
+              maxLength={200}
+              required
+              value={form.role}
+              onChange={(event) => setForm({ ...form, role: event.target.value })}
+            />
           </label>
           <label>
             Email
             <input
+              data-testid="contact-email-input"
+              maxLength={320}
               required
               type="email"
               value={form.email}
@@ -810,19 +832,35 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           </label>
           <label>
             Phone
-            <input value={form.phone} onChange={(event) => setForm({ ...form, phone: event.target.value })} />
+            <input
+              data-testid="contact-phone-input"
+              maxLength={80}
+              value={form.phone}
+              onChange={(event) => setForm({ ...form, phone: event.target.value })}
+            />
           </label>
           <label className="full">
             Project note
             <textarea
+              data-testid="contact-message-input"
+              maxLength={2000}
               required
               rows={5}
               value={form.message}
               onChange={(event) => setForm({ ...form, message: event.target.value })}
             />
           </label>
-          {message ? <p className={`form-message ${status}`}>{message}</p> : null}
-          <button className="primary-button form-submit" disabled={status === "loading"} type="submit">
+          {message ? (
+            <p className={`form-message ${status}`} data-testid="contact-status-message">
+              {message}
+            </p>
+          ) : null}
+          <button
+            className="primary-button form-submit"
+            data-testid="contact-submit-button"
+            disabled={status === "loading"}
+            type="submit"
+          >
             {status === "loading" ? "Sending" : "Send request"} <ArrowRight size={18} />
           </button>
         </form>

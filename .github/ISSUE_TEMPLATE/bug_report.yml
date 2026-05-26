@@ -1,0 +1,134 @@
+name: Bug Report
+description: Report a reproducible product, QA, security, or release issue.
+title: "[Area] Short issue description"
+labels: ["bug", "qa-review"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocker - prevents release or core usage
+        - Critical - major feature broken or security/data risk
+        - High - important feature broken with limited workaround
+        - Medium - partial issue with workaround
+        - Low - cosmetic or minor issue
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P0
+        - P1
+        - P2
+        - P3
+        - P4
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Local, staging, production, preview URL
+    validations:
+      required: true
+
+  - type: input
+    id: build_version
+    attributes:
+      label: Build/version
+      placeholder: Commit SHA, branch, release, or deploy ID
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: User role
+      placeholder: Guest, user, admin, QA, etc.
+
+  - type: input
+    id: device_browser
+    attributes:
+      label: Device/browser
+      placeholder: Chrome desktop, Safari iPhone, Pixel 7, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      placeholder: Screenshots, videos, traces, logs, request IDs, console errors
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Once
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      placeholder: User/business/security/release impact
+    validations:
+      required: true
+
+  - type: input
+    id: affected_area
+    attributes:
+      label: Affected area
+      placeholder: Auth, contact form, navigation, deployment, API, mobile
+    validations:
+      required: true
+
+  - type: input
+    id: suggested_owner
+    attributes:
+      label: Suggested owner
+      placeholder: Morten, Gorgo, Carrot, The Elf, Akka, etc.
+
+  - type: textarea
+    id: regression_risk
+    attributes:
+      label: Regression risk
+      placeholder: Should this become a regression test? If not, explain why.
+    validations:
+      required: true
